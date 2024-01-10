@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUPING TAGS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(255, 20, 145);
+        }
+
+        header {
+            background-color: rgb(224, 1, 113);
+            text-align: center;
+            border: 10px solid pink;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            border: 10px solid whitesmoke;
+            width: 600px;
+            height: 600px;
+            text-align: justify;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        article > h2 {
+            text-align: center;
+        }
+
+        footer {
+            border: 10px;
+            border-style: solid;
+            border-color: whitesmoke;
+            display: inline-block;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 1030px;
+            font-weight: bolder;   
+        }
+
+        article > p {
+            width: 400px;
+            height: 400px;
+            margin-left: 90px;
+            margin-top: 40px;
+            font-weight: bolder;
+            text-indent: 40px;
+        }
+        
+        article > aside {
+            margin-top: 90px;
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+    
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nesciunt magnam dolor totam assumenda aut asperiores voluptatem quod voluptates, facilis autem quidem? At ipsa illum, neque inventore hic doloremque repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aperiam enim nisi quibusdam voluptate expedita quasi est porro voluptates officiis voluptatem. Nam odit aperiam incidunt nesciunt praesentium? Illum, obcaecati dignissimos.
+                </p>
+                <aside>Escrito por IRINEU</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CSV</p>
+    </footer>
+</body>
+</html>

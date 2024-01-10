@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de Exemplo</title>
+</head>
+<body>
+    <main>
+        <h1>Site de Exemplo</h1>
+        <h2>Titulo1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam, numquam dolore, sed quisquam facilis iusto dolores fugiat necessitatibus maxime nisi, illo sequi et suscipit earum natus ipsam qui tenetur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iusto non nulla dignissimos magnam doloremque a vero hic reprehenderit, illo dolores quidem aspernatur voluptatum! Corporis atque necessitatibus a ut neque?</p>
+        <h2>Titulo 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ut magnam, vitae corrupti quia cumque omnis quaerat mollitia eum repellat fugiat perspiciatis dolor molestiae quos debitis, molestias cupiditate in vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti dignissimos explicabo delectus dolor necessitatibus corporis ipsum cum expedita possimus iure, incidunt similique, minima et sunt dicta adipisci facere illum.</p>
+        <h2>Titulo 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magni maiores quo pariatur iure quia aspernatur suscipit sapiente tempore, autem doloremque libero ducimus corrupti expedita molestiae iste omnis architecto. Molestias.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat animi perferendis. Atque tenetur nobis odit a quibusdam magnam incidunt suscipit esse pariatur facere fuga placeat perferendis ipsum, nihil magni.</p>
+    </main>
+    <script>
+        let principal = document.getElementsByTagName('main') [0]
+        principal.addEventListener('mouseover', alterarCor)
+        function alterarCor(){
+            principal.style.backgroundColor = 'pink'
+        } principal.addEventListener('mouseout', alterarCor2)
+        function alterarCor2(){
+            principal.style.backgroundColor = 'white'
+        }
+    </script>
+</body>
+</html>

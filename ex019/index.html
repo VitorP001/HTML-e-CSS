@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO-CLASSES</title>
+    <style>
+        div:hover {
+            color:red;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {       /* Hover é um exemplo de pseudoclasse e pra acessar uma pseudoclasse é usado dois pontos em vez de um só */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLO DE HOVER</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Esse texto n vai aparecer</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/Favicon.png" type="image/x-icon">
+    <title> LINK </title>
+</head>
+<body>
+    <h1>USANDO LINKS EXTERNOS</h1>
+    <p>Acesse o link clicando <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">aqui</a></p>
+    <!-- O parametro TARGET é pra abrir o link em uma nova aba e o REL é pra identificar o tipo do meu link -->
+    <!-- REL significa relative-->
+    <h1>USANDO LINKS INTERNOS</h1>
+    <p>Aqui é a primeira pagina, pra acessar a segunda clique <a href="ex007pg2.html" rel="next" target="_self">aqui</a></p>
+    <p>Pagina de <a href="noticias/ex007pg3.html"  rel="next" target="_self">noticias</a></p>
+    <!-- No Rel tbm tem um outro valor "nofollow" que serve pra quando é um site patrocinado ou um site que vc n tem certeza se é original -->
+    <!-- Quando eu n quero q o mecanismo de busca perpetue essa busca, eu uso o "nofollow" -->
+    <h1>LINKS PARA DOWNLOAD</h1>
+    <ul>
+        <li>Baixar o livro <abbr title="Portable Document Format"><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em Toda Parte.pdf" type="application/pdf">PDF</a></abbr></li>
+        <li>Baixar o livro <abbr title="Portable Document Format">PDF</abbr> <a href="livro/10 - Ligações em toda parte.zip" download="meuarquivo.zip" type="application/zip">compactado</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS</title>
+    <link rel="shortcut icon" href="../Imagens/Favicon.png" type="image/x-icon">
+    <style>
+        h2#listaordenada {
+            background-color: blueviolet;
+            width: 152px;
+            text-align: center;
+        }
+        h2#listasnaoordenadas{
+            background-color: crimson;
+            width: 152px;
+            text-align: center;
+        }
+        h2#lstdef{
+            background-color: aquamarine;
+            width: 152px;
+            text-align: center;
+        }
+        h2#junlst{
+            background-color: palevioletred;
+            width: 152px;
+            text-align: center;
+        }
+        li {
+            font-style: italic;
+        }
+        dl{
+            font-style: italic;
+        }
+        body{
+            background-color:cornsilk ;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLOS DE LISTAS</h1>
+    <h2 id='listaordenada' ><em>LISTAS ORDENADAS</em></h2>
+    <ol><!-- Existe o parametro type e start -->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Almoçar</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2 id="listasnaoordenadas">LISTAS NÃO ORDENADAS</h2>
+    <ul> <!-- Existe o parametro type q possui Square, Disc e Circle #DISC é padrao -->
+        <li>Açucar</li>
+        <li>Tempero</li>
+        <li>Td que há de bom</li>
+        <li>Elementos</li>
+    </ul>
+    <h2 id="junlst">JUNTANDO LISTAS</h2>
+    <ol>
+        <li>Antigas</li>
+        <ul type="disc">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Delphi</li>
+            <li>Fortran</li>
+        </ul>
+        <li>Novas</li>
+        <ul type="disc">
+            <li>Phyton</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ul>
+    </ol>
+    <h2 id="lstdef">LISTA DE DEFINIÇÃO</h2>
+    <dl>
+        <dt>TERMO</dt>
+        <dd>Aqui vai ser a definição do meu termo</dd>
+    </dl>
+</body>
+</html>

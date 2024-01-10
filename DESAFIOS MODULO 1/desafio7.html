@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 7</title>
+    <link rel="shortcut icon" href="/HTML e CSS/Imagens/Favicon.png" type="image/x-icon">
+</head>
+<body>
+    <h1>IMAGEM FLEXIVEL</h1>
+    <p>Voce esta vendo a imagem completa? Experimente ampliar o tamanho da sua <br>
+    janela para aproveitar melhor a experiencia</p>
+    <picture>
+        <source media="(max-width: 765px)" srcset="../paisagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1225px)" srcset="../paisagens/paisagem-m.png" type="image/png">
+        <img src="../paisagens/paisagem-g.png" alt="Paisagem">
+    </picture>
+</body>
+</html>

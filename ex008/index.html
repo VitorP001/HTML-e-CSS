@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENS DINAMICAS</title>
+    <style>
+        video{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>IMAGENS DINAMICAS</h1>
+    <picture>
+        <source media="(min-width:1025px )" srcset="imgdinamica/imgGrande.png" type="image/png">
+        <source media="(min-width:725px)" srcset="imgdinamica/imgMedia.png" type="image/png">
+       <img src="imgdinamica/imgPequena.png" alt="ImagemPequena">
+    </picture>
+    <h1>IMPLEMENTANDO AUDIO</h1>
+    <audio controls preload="metadata">
+        <source src="musica/musica.mp3" type="audio/mpeg">
+    </audio>
+    <h1>IMPLEMENTANDO VIDEO DE SERVIDORES INTERNOS</h1> <!-- É um metodo q gasta mt transmissao de dados do servidor de hospedagem -->
+    <p>Esse video ta hospedado no meu proprio servidor</p>
+    <video controls preload="metadata" poster="../Imagens/htmllogo650.png" height="315"  >
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <h1>IMPLEMENTANDO VIDEO DE SERVIDORES EXTERNOS</h1> <!-- É um metodo mais barato e eficiente -->
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/TJRyKe2IAU8?si=56ZwaNPbjN0_92gM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
