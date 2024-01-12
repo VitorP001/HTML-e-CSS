@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho de Imagem de Fundo</title>
+    <style>
+        body {
+            height: 98vh;  /* VH = Viewport Height (altura da viewport) */
+            background-color: black;
+            background-image: url(Imagens/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;  /* tem o valor contain que adapta a imagem a tela inteira sem cortar ela, mas acaba ficando esticado ou chapado*/
+            background-attachment: fixed; /* attachment é o vinculo do meu background (se ele vai ficar parado, acompanhar o conteudo etc) */ 
+            /* SHORTHAND
+                color > image > position > / size > repeat > attachment  #A ORDEM N IMPORTA, OQ IMPORTA É O POSITION E O SIZE ESTAREM LADO A LADO, NESSA ORDEM E SEPARADOS POR UMA BARRA
+                a barra é pra separar a propriedade position da propriedade size pra evitar
+                confusão entre o tamanho e o posicionamento de uma imagem */
+
+            /* EX: background: center top/cover black url(Imagens/wallpaper002.jpg) fixed no-repeat; */
+        }   
+
+        main {
+            background-color: white;
+            width: 400px;
+            margin: 0px auto;
+            padding: 10px;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            TESTE DE IMAGEM DE FUNDO
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, fuga illo consectetur pariatur voluptatibus impedit nobis odit velit accusamus sint iusto labore natus fugit aliquam deserunt est magni perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quos voluptatem, ea et illum rem quidem inventore veniam, ullam nihil ipsum! Quisquam non laborum autem velit dolores fuga dignissimos cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, obcaecati laudantium impedit incidunt atque commodi quia a ratione quidem aspernatur ad quas. Officia quae, iusto repudiandae laudantium dolor eveniet laboriosam?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, fuga illo consectetur pariatur voluptatibus impedit nobis odit velit accusamus sint iusto labore natus fugit aliquam deserunt est magni perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quos voluptatem, ea et illum rem quidem inventore veniam, ullam nihil ipsum! Quisquam non laborum autem velit dolores fuga dignissimos cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, obcaecati laudantium impedit incidunt atque commodi quia a ratione quidem aspernatur ad quas. Officia quae, iusto repudiandae laudantium dolor eveniet laboriosam?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, fuga illo consectetur pariatur voluptatibus impedit nobis odit velit accusamus sint iusto labore natus fugit aliquam deserunt est magni perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quos voluptatem, ea et illum rem quidem inventore veniam, ullam nihil ipsum! Quisquam non laborum autem velit dolores fuga dignissimos cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, obcaecati laudantium impedit incidunt atque commodi quia a ratione quidem aspernatur ad quas. Officia quae, iusto repudiandae laudantium dolor eveniet laboriosam?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, fuga illo consectetur pariatur voluptatibus impedit nobis odit velit accusamus sint iusto labore natus fugit aliquam deserunt est magni perspiciatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quos voluptatem, ea et illum rem quidem inventore veniam, ullam nihil ipsum! Quisquam non laborum autem velit dolores fuga dignissimos cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, obcaecati laudantium impedit incidunt atque commodi quia a ratione quidem aspernatur ad quas. Officia quae, iusto repudiandae laudantium dolor eveniet laboriosam?
+        </p>
+    </main>
+</body>
+</html>
