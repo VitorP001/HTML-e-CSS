@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            height: 3000px;
+            top: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: aquamarine;
+        }
+
+        thead, tfoot {
+            background-color: aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        tbody > tr:nth-child(odd) {                  
+            background-color: cornflowerblue;  /* EFEITO ZEBRADO */
+        }
+         /* nth-child serve pra dizer qual dos elementos eu quero q tenha background azul ou de quantos em quantos elementos
+         eu quero q seja azul(pra isso preciso colocar o n depois do numero) ou se eu quero q os impares/pares sejam pintados */
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas grandes
+    </h1>
+    <!-- Anatomia de Tabelas Grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH -> Th é usado pra titulo
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>3.400.500</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>10.500.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>14.340.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>8.000.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td>36.240.500</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
