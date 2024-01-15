@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Celulas</title>
+    <style>
+        table {
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(2n) {
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Estado</th> <!-- O colspan serve pra mesclar colunas (expandir uma coluna com a finalidade de ela ocupar os espaços vazios)
+            -->
+        </tr>
+        <tr>
+            <td >São Paulo</td>
+            <td rowspan="3">2.500.000</td> <!-- O rowspan serve pra mesclar linhas -->
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+        </tr>
+    </table>
+</body>
+</html>
