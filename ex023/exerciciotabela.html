@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio de Tabela</title>
+    <style>
+        table {
+            font-family: 'Courier New', Courier, monospace;
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .grupo {
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <colgroup>
+            <col class="primeira">
+            <col class="grupo" span="2"> <!-- Eu juntei duas colunas pra valeram só como uma, desse jeito eu pinto as duas -->
+            <col class="quarta">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Roberto</td>
+            <td>Masculino</td>
+            <td>32</td>
+            <td>Policial</td>
+        </tr>
+        <tr>
+            <td>Irineu</td>
+            <td>Masculino</td>
+            <td>49</td>
+            <td>Uber</td>
+        </tr>
+        <tr>
+            <td>Lora</td>
+            <td>Feminino</td>
+            <td>45</td>
+            <td>Dona de Bar</td>
+        </tr>
+    </table>
 </body>
 </html>
