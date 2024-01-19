@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input de Telefone e e-mail</title>
+</head>
+<body>
+    <h1>Testando novos inputs</h1>
+    <form action="teste.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" minlength="8" maxlength="10" placeholder="(xx) xxxx-xxxx" required
+                autocomplete="tel">
+            </p>
+                    <!-- Estudar sobre RegEx (Expressões Regulares) -->
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" minlength="10" maxlength="20" placeholder="email" required
+                autocomplete="email">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

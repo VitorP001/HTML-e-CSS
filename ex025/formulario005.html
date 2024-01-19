@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais inputs</title>
+</head>
+<body>
+    <h1>Testando outros inputs</h1>
+        <form action="teste.php" method="post">
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <p>
+                    <input type="checkbox" name="bascheck" id="ibascheck"> <label for="ibascheck">Basquete</label> <br>
+                    <input type="checkbox" name="tencheck" id="itencheck"> <label for="itencheck">Tenis</label> <br>
+                    <input type="checkbox" name="pingcheck" id="ipingcheck"> <label for="ipingcheck">Ping-pong</label> <br>
+                    <input type="checkbox" name="beicheck" id="ibeicheck"> <label for="ibeicheck">Beisebol</label> <br>
+                    <input type="checkbox" name="futcheck" id="ifutcheck"> <label for="ifutcheck">Futebol</label> <br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <input type="radio" name="sexo" id="isexomas" checked> <label for="isexomas">Masculino</label> <!-- o input do tipo radio precisa ter o mesmo NAME pra poder trocar de sexo, caso contrario os dois sexos acabam ficando marcados -->
+                    <input type="radio" name="sexo" id="isexofem"> <label for="isexofem">Feminino</label>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags que n sao inputs</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="teste.php" method="post">
+        <div>
+            <label for="iestados">Estados:</label>
+            <select name="estados" id="iestados">
+               <optgroup label="Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj" selected>Rio de Janeiro</option>
+                    <option value="es">Espirito Santo</option>
+               </optgroup>
+                <optgroup label="Sul">
+                    <option value="sc">Santa Catarina</option>
+                    <option value="pr">Paraná</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option value="CAM">Caminhoneiro</option>
+                <option value="JOG">Jogador</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
