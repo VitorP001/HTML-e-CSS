@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Estilo pra tela */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1, h2 {
+    margin: 10px;
+}
+
+menu {
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+    text-indent: 30px;
+}
