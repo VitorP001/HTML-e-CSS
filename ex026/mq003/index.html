@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA FEATURES/TYPES PRA PROJETOS PEQUENOS</title> <!-- Nesse exercicio eu faço a configuração de media type e media feature atraves de uma regra do css (@media) 
+    e assim junto todas as configurações em um unico style/arquivo -->
+    <style>
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+            background-color: cornflowerblue;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: top center;
+            background-image: none;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: aliceblue;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        /* Configurações de Retrato */
+        @media screen and (orientation: portrait) {
+                body {
+                    background-image: url(../imagens/cev-portrait.jpg);
+                }
+
+                h1 {
+                    font-size: 15px;
+                }
+        }
+
+        /* Configurações de Paisagem */
+        @media screen and (orientation: landscape) {
+                body {
+                    background-image: url(../imagens/cev-landscape.jpg);
+                }
+                
+                h1 {
+                    font-size: 15px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1> <!-- Orientação é a posição do dispostivo (em pé ou deitado) -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES PRA TELA EM PÉ */
+
+body {
+    background-image: url(../../imagens/cev-portrait.jpg);
+}
+
+h1 {
+    font-size: 15px;
+}

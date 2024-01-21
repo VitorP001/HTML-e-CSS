@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES PRA TELA DEITADA */
+
+body {
+    background-image: url(../../imagens/cev-landscape.jpg);
+}
+   
+h1 {
+    font-size: 15px;
+}
