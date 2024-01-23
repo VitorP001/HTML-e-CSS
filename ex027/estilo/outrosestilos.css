@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+                div#formulario {
+                    width: 70vw;
+                }
+
+                div#imagem {
+                   
+                    float: left;
+                    width: 30%;
+                    height: 100%;
+                    border-radius: 10px 0px 0px 10px;
+                } 
+                
+                div#login, div#senha {    
+                      padding-bottom: 10px;
+                      padding-left: 10px;
+
+                }
+                
+                form {
+                    margin: 140px 60px;
+                    float: right;
+                }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+                div#formulario {
+                    width: 60vw;
+                }
+                
+                div#imagem {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 10px 0px 0px 10px;
+                }               
+                
+                div#login, div#senha {    
+                    padding-bottom: 10px;
+                    padding-left: 10px;                  
+               }
+
+                form {
+                    margin: 140px 20px;
+                    float: right;                   
+                }
+}
+
+@media screen and (min-width: 1200px) {
+                div#formulario {
+                    width: 50vw;
+                }
+
+                div#imagem {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 10px 0px 0px 10px;
+                }
+
+                div#login, div#senha {    
+                    padding-bottom: 10px;
+                    padding-left: 10px;
+                }
+                
+                form {
+                    margin: 140px 20px;
+                    float: right;
+                }
+}   
